@@ -11,4 +11,7 @@ goty['GTA5'] = '2013'
 goty['The Witcher 3'] = '2015'
 goty.pop ('Elden Ring')
 for game, year in goty.items (  ):
-  print (f'{game} : {year}' )
+  if int(year) < 2018:
+    print(f'{game} : {year} - Старая классика')
+  else:
+    print (f'{game} : {year}')
